@@ -23,7 +23,7 @@ namespace SwapiMVC.Models
         [JsonPropertyName("url")]
         public string Url { get; set; }
 
-        public string? Id
+        public string Id
         {
             get
             {
