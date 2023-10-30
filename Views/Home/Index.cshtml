@@ -1,8 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Random rnd = new();
+    string[] names = {"Chris", "Holly", "Mike", "Steve", "Mary", "Alan", "Jonathan", "Henry"};
+    int nameIndex = rnd.Next(names.Length);
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Welcome @names[nameIndex]</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
